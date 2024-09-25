@@ -41,6 +41,13 @@ while True:
         print("You lost!")
         system_wins += 1
 
+if system_wins > user_wins:
+    print("You Lost...")
+elif user_wins > system_wins:
+    print("Congratulations champ...")
+elif user_wins == system_wins:
+    print("It's a tie...")    
+
 print("Your score :", user_wins)
 print("Computer score: ", system_wins)
 print("Number of rounds drawn :", draw)
